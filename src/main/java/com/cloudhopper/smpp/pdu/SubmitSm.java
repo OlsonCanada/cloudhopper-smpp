@@ -22,7 +22,9 @@ package com.cloudhopper.smpp.pdu;
 
 import com.cloudhopper.smpp.SmppConstants;
 
-public class SubmitSm extends BaseSm<SubmitSmResp> {
+import java.io.Serializable;
+
+public class SubmitSm extends BaseSm<SubmitSmResp> implements Serializable {
 
     public SubmitSm() {
         super(SmppConstants.CMD_ID_SUBMIT_SM, "submit_sm");
